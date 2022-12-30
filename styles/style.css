@@ -9,6 +9,7 @@
 
 body {
     margin-top: 100px;
+    padding-bottom: 50px;
     /*max-width: 800px;*/
 }
 
@@ -107,4 +108,24 @@ p {
     background: var(--primary-color);
     box-shadow: var(--box-shadow);
     color: white;
+}
+
+@media (max-width: 415px) {
+    .for-big-screens {
+        display: none;
+    }
+    .primary-link {
+        display: block;
+        text-align: center;
+    }
+    h2.mb-3, p {
+        text-align: center;
+    }
+    p {
+        padding: 8px;
+    }
+    h1 {
+        font-size: 74px;
+        margin-bottom: 10px;
+    }
 }
